@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.date = %q{2011-01-30}
   s.description = %q{Generate antonym predicates methods for each regular predicate of a class. If the method's name is in the dictionary, then the antonym is used. Otherwise, the form is "not_#{method_name}"}
   s.email = %q{mrodrigues.uff@gmail.com}
-  s.extra_rdoc_files = ["README.rdoc", "lib/antonym_predicates.rb"]
-  s.files = ["README.rdoc", "Rakefile", "lib/antonym_predicates.rb", "Manifest", "antonym_predicates.gemspec"]
+  s.extra_rdoc_files = ["CHANGELOG", "README.rdoc", "lib/antonym_predicates.rb"]
+  s.files = ["CHANGELOG", "README.rdoc", "Rakefile", "antonym_predicates.gemspec", "lib/antonym_predicates.rb", "spec/antonym_predicates_spec.rb", "Manifest"]
   s.homepage = %q{}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Antonym_predicates", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
