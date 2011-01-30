@@ -26,5 +26,5 @@ You can also pass a list to the +generate_antonyms+ method.
 
 If you are having a problem with Antonym Predicates, please submit an issue here.
 
-http://github.com/mrodrigues/antonym_predicates/issues
+http://github.com/mrodrigues/antonym-predicates/issues
 
