@@ -1,0 +1,30 @@
+= Antonym Predicates
+
+Generate antonym predicates methods for each regular predicate of a class or instance. If the method's name is in the dictionary, then the antonym is used. Otherwise, the form is "not_#{method_name}"
+
+
+== Setup
+
+The only thing that you need to configure is the dictionary. Include any antonyms that you want to use.
+
+    require 'antonym_predicates'
+    AntonymPredicates.antonyms = {
+        "equal"         => "different",
+        "is_a"          => "isnt_a",
+        "respond_to"    => "doest_respont_to"
+    }
+
+Then you can generate antonym methods doing the following:
+
+    AntonymPredicates.generate_antonyms String
+
+You can also pass a list to the +generate_antonyms+ method.
+
+    AntonymPredicates.generate_antonyms String, Integer
+
+== Found a bug?
+
+If you are having a problem with Antonym Predicates, please submit an issue here.
+
+http://github.com/mrodrigues/antonym_predicates/issues
+
