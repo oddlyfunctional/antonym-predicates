@@ -2,13 +2,10 @@ module AntonymPredicates
 
   @antonyms ||= {}
 
-  def self.antonyms
-    @antonyms
+  class << self
+    attr_accessor :antonyms
   end
 
-  def self.antonyms=(antonyms)
-    @antonyms = antonyms
-  end
 
   #  @antonyms = {
   #    "equal" => "different",
