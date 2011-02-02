@@ -5,11 +5,11 @@ describe AntonymPredicates do
   before(:each) do
     class MyClass
 
-      def self.something?
+      def self.something_true?
         true
       end
 
-      def otherthing?
+      def something_false?
         false
       end
 
@@ -29,11 +29,11 @@ describe AntonymPredicates do
 
   it 'should be able to generate antonym methods with "not_method?" form, for both class and instance' do
     AntonymPredicates.generate_antonyms MyClass
-    MyClass.should respond_to :not_something?
-    MyClass.not_something?.should be_false
+    MyClass.should respond_to :not_something_true?
+    MyClass.not_something_true?.should be_false
     obj = MyClass.new
-    obj.should respond_to :not_otherthing?
-    obj.not_otherthing?.should be_true
+    obj.should respond_to :not_something_false?
+    obj.not_something_false?.should be_true
   end
 
   it "should be able to generate antonym methods from dictionary, for both class and instance" do
@@ -57,7 +57,7 @@ describe AntonymPredicates do
       end
     end
     AntonymPredicates.generate_antonyms MyClass, MyOtherClass
-    MyClass.should respond_to :not_something?
+    MyClass.should respond_to :not_something_true?
     MyOtherClass.should respond_to :not_someone?
   end
 
