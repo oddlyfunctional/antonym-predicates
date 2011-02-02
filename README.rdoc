@@ -11,7 +11,7 @@ The only thing that you need to configure is the dictionary. Include any antonym
     AntonymPredicates.antonyms = {
         "equal"         => "different",
         "is_a"          => "isnt_a",
-        "respond_to"    => "doesnt_respont_to"
+        "respond_to"    => "doesnt_respond_to"
     }
 
 Then you can generate antonym methods doing the following:
